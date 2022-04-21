@@ -4,8 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
+
+    <link href="{% static "blog/css/base.css" %}" type="text/css" rel="stylesheet">
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg custom-navbar custom-navbar-light">
+        <div class="container">
+            <h1 class="navbar-brand">Andrei-Paul Ionescu</h1>
+        </div>
+
+        <div class="social-media order-lg-last">
+            <p class="mb-0 d-flex">
+                <a href="#" class="d-flex align-items-center justify-content-center">
+                    <span class="fa fa-github">
+                        <i class="sr-only">Github</i>
+                    </span>
+                </a>
+            </p>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto mr-md-3">
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <section class="content">
         {% block content %}
