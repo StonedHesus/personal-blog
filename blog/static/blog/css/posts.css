@@ -1,0 +1,22 @@
+.post{
+
+    text-align: center;
+}
+
+.post-title{
+
+
+
+}
+
+.post-title__link{
+
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+.post-title__link:hover{
+
+    color: #FFBF00;
+    text-decoration: none;
+}
