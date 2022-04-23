@@ -1,3 +1,8 @@
+{% load static %}
+{% block style %}
+<link href="{% static "blog/css/pagination.css" %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
 <div class="pagination">
     <span class="page-links">
         {% if page.has_previous %}
