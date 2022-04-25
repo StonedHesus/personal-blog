@@ -1,8 +1,53 @@
+:root {
+  --primary: #23adad;
+  --lightGray: #23adade1;
+  --lightGray2: #cbe0dd;
+  --darkGray: #2d4848;
+}
+
 .pagination{
 
     text-align: center;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+
+    border-radius: 0.6rem;
+    background: #ffffff;
+
+    box-shadow: 0 0.8rem 2rem rgba(90, 97, 129, 0.05);
+
     margin-top: 2.5%;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.list-item{
+
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--darkGray);
+    cursor: pointer;
+}
+
+.page-numbers{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.current-page{
+
+    color: var(--darkGray);
+    pointer-events: initial;
 }

@@ -1,3 +1,16 @@
+html {
+
+  box-sizing: border-box;
+  font-size: 92.5%;
+  overflow-y: scroll;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.6px;
+  line-height: 1.4;
+  -webkit-user-select: none;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
 *, *::before, *::after {
 
     -webkit-box-sizing: border-box;

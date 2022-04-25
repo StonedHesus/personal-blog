@@ -9,9 +9,18 @@
             <a href="?page={{ page.previous_page_number }}">Previous</a>
         {% endif %}
 
-        <span class="current-page">
-            Page {{ page.number }} of {{ page.paginator.num_pages }}
-        </span>
+
+        <ul class="pages">
+
+            {% for index in page.paginator.page_range%}
+
+                {% if index == page.number %}
+                    <li class="list-item page-numbers current-page">{{ index }}</li>
+                {% else %}
+                    <li class="list-item page-numbers">{{ index }}</li>
+                {% endif%}
+            {% endfor %}
+        </ul>
 
         {% if page.has_next %}
             <a href="?page={{ page.next_page_number }}">Next</a>
