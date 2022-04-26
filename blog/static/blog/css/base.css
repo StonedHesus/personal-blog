@@ -128,12 +128,6 @@ ul{
     display: flex;
 }
 
-li{
-
-    margin-left: 15%;
-    text-decoration: none;
-}
-
 .navbar-link{
 
     text-decoration:none;

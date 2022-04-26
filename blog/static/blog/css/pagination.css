@@ -1,8 +1,5 @@
 :root {
-  --primary: #23adad;
-  --lightGray: #23adade1;
-  --lightGray2: #cbe0dd;
-  --darkGray: #2d4848;
+  --primary: #FFBF00;
 }
 
 .pagination{
@@ -24,30 +21,14 @@
     margin-right: 5%;
 }
 
-.list-item{
+.page-item.active .page-link{
 
-    width: 10rem;
-    height: 10rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--darkGray);
-    cursor: pointer;
+    color: white!important;
+    background: var(--primary)!important;
+    border-color: var(--primary)!important;
 }
 
-.page-numbers{
+.page-link {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.8rem;
-    font-size: 1.4rem;
-    cursor: pointer;
-}
-
-.current-page{
-
-    color: var(--darkGray);
-    pointer-events: initial;
+    color: var(--primary)!important;
 }
