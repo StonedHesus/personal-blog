@@ -2,29 +2,65 @@
 
 {% block style %}
     <link href="{% static "blog/css/footer.css" %}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 {% endblock %}
 
 {% block footer %}
 <footer>
     <div class="container footer-container">
-        <div class="row justify-content-center">
-            <div class="col-md-9 text-center">
-                <div class="footer-site-logo mb-4">
-                    <a href="#">Andrei-Paul Ionescu's Blog</a>
-                </div>
-            <ul class="list-unstyled nav-links mb-5">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
 
-            </ul>
+        <h3>Stay in touch</h3>
 
-            <div class="social mb-4">
-            <h3>Stay in touch</h3>
-            <ul class="list-unstyled">
-                <li class="in"><a href="#"><span class="icon-instagram"></span></a></li>
+        <section class="mb-4">
 
-            </ul>
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/StonedHesus" target="_blank"
+               role="button">
+                <i class="fa fa-github"></i></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1"
+               href="https://www.linkedin.com/in/andrei-paul-ionescu-545a3b200/" target="_blank" role="button">
+                <i class="fa fa-linkedin-square"></i></a>
+
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/paul.ionescu.182/"
+               target="_blank" role="button">
+                <i class="fa fa-facebook-official"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/stoned_hesus/"
+               target="_blank" role="button">
+                <i class="fa fa-instagram"></i></a>
+
+    </section>
+
+    <section class="">
+         <form action="">
+             <div class="row d-flex justify-content-center">
+                 <div class="col-auto">
+                 <p class="pt-2">
+                    <strong>Stay updated! Sign up to the newsletter:</strong>
+                 </p>
             </div>
+
+            <div class="col-md-5 col-12">
+                <div class="form-outline form-white mb-4">
+                    <input type="email" id="form5Example21" class="form-control" />
+                    <label class="form-label" for="form5Example21">Email address</label>
+                </div>
+            </div>
+
+            <div class="col-auto">
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+             </div>
+
+             </div>
+         </form>
+    </section>
+
 
             <div class="copyright">
             <p class="mb-0"><small>&copy; Andrei-Paul Ionescu. All Rights Reserved.</small></p>

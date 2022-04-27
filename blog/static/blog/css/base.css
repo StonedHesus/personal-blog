@@ -24,6 +24,16 @@ div{
     display: block;
 }
 
+.no-decorations{
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.brand-link:hover{
+
+    color:var(--primary);
+}
 .navbar-container{
 
     padding-right: 15px;
